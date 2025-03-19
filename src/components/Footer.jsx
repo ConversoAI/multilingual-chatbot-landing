@@ -10,7 +10,7 @@ export default function Footer() {
                     <Link to="/"><img src={Logo} className="mb-2" /></Link>
                     <ul className="flex flex-wrap items-center mb-6 text-sm text-base-content sm:mb-0">
                         <li>
-                            <Link to="/about" className="hover:underline me-4 md:me-6">About us</Link>
+                            <Link to="/about" className="hover:underline me-4 md:me-6">About Us</Link>
                         </li>
                         <li>
                             <Link to="/contact" className="hover:underline me-4 md:me-6">Contact</Link>
