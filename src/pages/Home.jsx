@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import bgImage from '../assets/bg/homeHeroBg.png';
+import chatbotSad from '../assets/chatbot-sad.png'
+import { IconCurrencyDollar, IconLanguage } from '@tabler/icons-react';
 
 export default function Home() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -39,7 +41,34 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='h-screen'></div>
+            <section className="w-full px-4 py-8 md:px-20 md:py-32">
+                <div className='grid grid-cols-1 md:grid-cols-2'>
+                    <div className='flex flex-row justify-center items-center'>
+                        <img src={chatbotSad} alt="Chatbot" className='h-1/2' />
+                    </div>
+                    <div className='flex flex-col items-start justify-center gap-8'>
+                        <h2 className='text-2xl md:text-4xl font-bold'>Global reach with local understanding</h2>
+                        <div className='flex flex-col gap-6'>
+                            <div className='flex flex-col md:flex-row gap-2'>
+                                <span className='text-primary'><IconCurrencyDollar size={36} /></span>
+                                <div>
+                                    <h3 className='text-lg md:text-xl font-bold'>The Cost of Language Barriers</h3>
+                                    <p className='text-sm md:text-base'>In today's global marketplace, businesses without multilingual support lose 40% of potential international customers. Traditional translation services are slow, expensive, and miss cultural context.</p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col md:flex-row gap-2'>
+                                <span className='text-primary'><IconLanguage size={36} /></span>
+                                <div>
+                                    <h3 className='text-lg md:text-xl font-bold'>With Our Multilingual Chatbot Platform</h3>
+                                    <p className='text-sm md:text-base'>Deliver exceptional multilingual experiences fast - without the complexity of traditional translation services.
+                                        Accelerate global customer engagement, eliminate language barriers, and deploy across all channels with ease.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </main>
     );
 }
